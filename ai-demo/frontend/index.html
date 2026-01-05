@@ -467,7 +467,7 @@ async function sendMessage() {
       : "📚 Found relevant books...";
 
     // API call
-    const res = await fetch("http://127.0.0.1:8000/ai-search", {
+    const res = await fetch("https://uaeu-library-ai.onrender.com/ai-search", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query: text, limit: 5 })
@@ -501,4 +501,5 @@ window.onload = showWelcome;
 
 </body>
 </html>
+
 
